@@ -1,0 +1,25 @@
+RESUMO DOS DIAGNOSTICOS DE ONDAS DE GRAVIDADE
+====================================================
+N_BV = 0.012 s^-1
+lambda_z = 4000.0 m
+m = 2*pi/lambda_z = 1.5707963268e-03 m^-1
+Intervalo k/m = 0.05 a 4.0 (400 pontos).
+
+O comprimento de onda vertical fisico lambda_z e o numero de onda M foram mantidos fixos; apenas dz variou.
+Resolucoes verticais de frequencia (pontos por onda): [2, 4, 6, 8, 12, 16, 24, 32]
+Resolucoes verticais de velocidade de grupo: [4, 8, 16, 32]
+
+Ordens globais observadas (ajuste com P >= 8):
+- Nao-alternada, 2a ordem: p = 1.997676
+- Nao-alternada, 4a ordem: p = 3.954675
+- Compacto (Pade), 4a ordem: p = 4.047624
+- Alternada (Lorenz), 2a ordem: p = 1.999443
+
+Comparacao dos esquemas na resolucao comum mais fina, P=32:
+- Menor L2 de frequencia: Compacto (Pade), 4a ordem (1.8250313629e-06)
+- Menor Linf de frequencia: Compacto (Pade), 4a ordem (3.1928762527e-06)
+- Menor L2 da velocidade de grupo: Compacto (Pade), 4a ordem (2.1500523883e-05)
+
+P=2 representa a escala de Nyquist. Nesse limite, mstar pode ser nulo nos esquemas nao alternados, sem causar divisao por zero neste experimento.
+A ordem de convergencia foi estimada somente com P >= 8, evitando o regime mal resolvido.
+Os resultados sao diagnosticos numericos deste conjunto de parametros e nao implicam conclusoes fisicas gerais.
