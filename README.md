@@ -1,6 +1,6 @@
 # Vertical discretization of atmospheric internal gravity waves
 
-This repository is the reproducible code companion to the manuscript *Impact of vertical resolution and finite-difference schemes on the simulation of atmospheric internal gravity waves*. It follows the paper structure so that reviewers can move directly from a method or figure to the script and numerical output that produced it.
+This repository is the reproducible code companion to the manuscript *Impact of vertical resolution and finite-difference schemes on the simulation of atmospheric internal gravity waves*.
 
 The experiments isolate vertical-discretization error. The physical vertical wavelength is held fixed in every convergence test; refinement changes `dz = lambda_z / PPWz`, not the wave being represented. All scripts use Matplotlib's non-interactive `Agg` backend and write both PNG and SVG figures. SVG text is converted to vector paths to prevent duplicated or overlaid labels when figures are included in LaTeX through Inkscape.
 
@@ -11,7 +11,7 @@ The experiments isolate vertical-discretization error. The physical vertical wav
 | Numerical-method characterization (Sections 2.6 and 3.1; Figures 1-3) | `experiments/experiment_1_numerical_methods/run_experiment.py` | PPWz sweep, controlled scheme contrasts, contrast error-reduction ratio, accuracy-cost Pareto diagram, fixed-wavelength convergence |
 | Physical consequences (Sections 2.7 and 3.2; Figures 4-6) | `experiments/experiment_2_physical_properties/run_experiment.py` | rotational frequency error, Doppler/stationarity residual, vertical group velocity |
 | Prognostic error accumulation (Sections 2.8 and 3.3; Figures 7-9) | `experiments/experiment_3_prognostic_evolution/run_experiment.py` | normal-mode phase drift, wave-packet energy centroid, position error, packet widening |
-| Supplementary teaching model | `experiments/supplementary_bubble_mountain/run_experiment.py` | buoyancy-bubble and mountain-wave snapshots |
+| Supplementary model | `experiments/supplementary_bubble_mountain/run_experiment.py` | buoyancy-bubble and mountain-wave snapshots |
 | Shared equations and visual style | `gravity_waves/common.py` | modified-wavenumber operators, dispersion relations, group velocities, plotting helpers |
 
 ## Figures included in the final manuscript
@@ -31,7 +31,6 @@ The table below lists only the figures that are actually numbered in the final m
 | **Figure 9** | Temporal evolution of the vertical widening of wave packets for different vertical resolutions. Widening is defined as the change in energetic width relative to the initial state. | [PNG](experiments/experiment_3_prognostic_evolution/outputs/wave_packet_widening.png) · [SVG](experiments/experiment_3_prognostic_evolution/outputs/wave_packet_widening.svg) | [run_experiment.py](experiments/experiment_3_prognostic_evolution/run_experiment.py) |
 Each experiment stores figures and machine-readable CSV tables in its own `outputs/` directory. Panel letters are placed outside the plotting axes, and the figures have no overall title so that the manuscript caption remains the single source of description.
 
-The plotting geometry is intentionally inherited from the original project: figure sizes, panel arrangements, axis scales and limits, line widths, markers, color maps, legends, grids, and shared color bars are preserved. Translation changes text only; it does not redesign the figures.
 
 ## Numerical formulation
 
@@ -113,15 +112,6 @@ python scripts/run_all.py --include-supplementary
 - Normal mode: `lambda_z = 4000 m`, `k/m = 1`, 50 wave periods, and 200 RK4 steps per analytical period.
 - Wave packet: `PPWz = 2.5,3,4,8`, `z0 = 0.5 Lz`, `Lz = 20 lambda_z`, and spectral width `sigma_m = m0/20`. The positive-wavenumber packet is truncated at four standard deviations, keeping it below Nyquist even at `PPWz = 2.5`.
 
-## Output conventions
-
-PNG files provide quick previews; SVG files are intended for the manuscript. CSV files contain the plotted metrics and support independent checking or replotting. A robust LaTeX inclusion is:
-
-```latex
-\includesvg[width=\linewidth,inkscapelatex=false]{path/to/figure.svg}
-```
-
-Because figure text is stored as vector paths, LaTeX should not separately reconstruct text elements. This avoids the overlapping-label problem produced by some Inkscape/`svg` package combinations.
 
 ## Reproducibility notes and limitations
 
@@ -130,11 +120,3 @@ Because figure text is stored as vector paths, LaTeX should not separately recon
 - `PPWz = 2` is the vertical Nyquist scale. Some non-staggered operators have `m* = 0` there; this is a property of the stencil, not a missing value.
 - The compact Pade operator is compared through its exact Fourier symbol. Its arithmetic count is a nominal local-work estimate and excludes implementation-dependent communication or solver overhead.
 - Wave-packet centroids and widths use the same linear energy moments as the legacy experiment, with $E=\tfrac12(|u|^2+|w|^2+|b|^2/N^2)$. The packet starts at the domain center to avoid boundary crossing during the diagnosed interval.
-
-## Archival material
-
-Original course documents and background references are kept under `docs/` for provenance. They are not required to run the experiments. Active code, filenames, labels, console messages, and documentation are in English.
-
-## Citation
-
-If this repository supports a publication or review, cite the accompanying manuscript and record the repository commit hash used to generate the results.
