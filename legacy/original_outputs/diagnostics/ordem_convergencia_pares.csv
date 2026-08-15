@@ -1,0 +1,17 @@
+esquema,pontos_inicio,pontos_fim,ordem_entre_pares
+"Nao-alternada, 2a ordem",8,12,1.994937656086263
+"Nao-alternada, 2a ordem",12,16,1.9976015936340346
+"Nao-alternada, 2a ordem",16,24,1.9988069819138483
+"Nao-alternada, 2a ordem",24,32,1.9994177525377899
+"Nao-alternada, 4a ordem",8,12,3.9054605445561963
+"Nao-alternada, 4a ordem",12,16,3.95186911672153
+"Nao-alternada, 4a ordem",16,24,3.975249018819558
+"Nao-alternada, 4a ordem",24,32,3.987688126892465
+"Compacto (Pade), 4a ordem",8,12,4.101551634415561
+"Compacto (Pade), 4a ordem",12,16,4.049865777977093
+"Compacto (Pade), 4a ordem",16,24,4.025216410874183
+"Compacto (Pade), 4a ordem",24,32,4.012423453633206
+"Alternada (Lorenz), 2a ordem",8,12,1.9988069819138483
+"Alternada (Lorenz), 2a ordem",12,16,1.9994177525377899
+"Alternada (Lorenz), 2a ordem",16,24,1.9997063354833382
+"Alternada (Lorenz), 2a ordem",24,32,1.9998555291360718

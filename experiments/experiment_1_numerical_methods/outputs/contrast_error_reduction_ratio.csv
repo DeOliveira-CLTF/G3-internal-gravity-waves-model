@@ -1,0 +1,16 @@
+contrast,PPWz,baseline_scheme,improved_scheme,baseline_modified_wavenumber_error,improved_modified_wavenumber_error,error_reduction_ratio
+(a) Formal-order effect,4.0,"Non-staggered, second order","Non-staggered, fourth order",0.3633802276324186,0.15117363684322493,2.4037274965426887
+(a) Formal-order effect,6.0,"Non-staggered, second order","Non-staggered, fourth order",0.17300665686731187,0.03517443301186374,4.918534345925623
+(a) Formal-order effect,8.0,"Non-staggered, second order","Non-staggered, fourth order",0.09968368384289383,0.011784835913052238,8.458639948689456
+(a) Formal-order effect,12.0,"Non-staggered, second order","Non-staggered, fourth order",0.04507034144862798,0.0024249029757335006,18.5864514579165
+(a) Formal-order effect,16.0,"Non-staggered, second order","Non-staggered, fourth order",0.025504641595567312,0.0007782941797918053,32.76992460921375
+(b) Staggering effect,4.0,"Non-staggered, second order","Staggered Lorenz, second order",0.3633802276324186,0.09968368384289383,3.64533305375354
+(b) Staggering effect,6.0,"Non-staggered, second order","Staggered Lorenz, second order",0.17300665686731187,0.04507034144862798,3.8385921052874226
+(b) Staggering effect,8.0,"Non-staggered, second order","Staggered Lorenz, second order",0.09968368384289383,0.025504641595567312,3.9084526426052104
+(b) Staggering effect,12.0,"Non-staggered, second order","Staggered Lorenz, second order",0.04507034144862798,0.011384070534630752,3.959070818431982
+(b) Staggering effect,16.0,"Non-staggered, second order","Staggered Lorenz, second order",0.025504641595567312,0.006413148855794248,3.976929612747721
+(c) Compactness effect,4.0,"Non-staggered, fourth order","Compact Pade, fourth order",0.15117363684322493,0.04507034144862798,3.3541711019770166
+(c) Compactness effect,6.0,"Non-staggered, fourth order","Compact Pade, fourth order",0.03517443301186374,0.007607988240774133,4.623355333720212
+(c) Compactness effect,8.0,"Non-staggered, fourth order","Compact Pade, fourth order",0.011784835913052238,0.0022746914743162483,5.180850258646463
+(c) Compactness effect,12.0,"Non-staggered, fourth order","Compact Pade, fourth order",0.0024249029757335006,0.0004314086430253772,5.6208956749873416
+(c) Compactness effect,16.0,"Non-staggered, fourth order","Compact Pade, fourth order",0.0007782941797918053,0.0001345668635160946,5.783698597528202

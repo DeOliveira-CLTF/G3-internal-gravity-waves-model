@@ -1,0 +1,13 @@
+scheme,PPWz,dz_m,maximum_relative_frequency_error_pct
+"Non-staggered, second order",4,500.0,57.06495990055271
+"Non-staggered, fourth order",4,500.0,17.8058457991128
+"Compact Pade, fourth order",4,500.0,4.718788508810958
+"Staggered Lorenz, second order",4,500.0,11.069735843503022
+"Non-staggered, second order",6,333.3333333333333,20.915335447211298
+"Non-staggered, fourth order",6,333.3333333333333,3.6449349520893484
+"Compact Pade, fourth order",6,333.3333333333333,0.7664774163023809
+"Staggered Lorenz, second order",6,333.3333333333333,4.718788508810976
+"Non-staggered, second order",8,250.0,11.069735843503022
+"Non-staggered, fourth order",8,250.0,1.1922974722910555
+"Compact Pade, fourth order",8,250.0,0.22794209920624728
+"Staggered Lorenz, second order",8,250.0,2.616684667307203

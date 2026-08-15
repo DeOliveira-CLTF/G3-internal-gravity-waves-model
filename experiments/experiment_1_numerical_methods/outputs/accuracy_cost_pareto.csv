@@ -1,0 +1,5 @@
+scheme,PPWz,nominal_flops_per_grid_point,modified_wavenumber_error_pct,inside_ideal_operating_region,pareto_optimal
+"Non-staggered, second order",4.0,2,36.33802276324186,False,False
+"Non-staggered, fourth order",4.0,6,15.117363684322493,False,False
+"Compact Pade, fourth order",4.0,10,4.507034144862798,False,True
+"Staggered Lorenz, second order",4.0,2,9.968368384289384,True,True

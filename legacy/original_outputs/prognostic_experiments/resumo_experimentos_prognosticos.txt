@@ -1,0 +1,54 @@
+EXPERIMENTOS PROGNOSTICOS DE DISPERSAO
+============================================
+N = 0.012000 s^-1
+lambda_z = 4000.0 m (fixo)
+m = 2*pi/lambda_z = 1.5707963268e-03 m^-1
+k/m = 1.00
+Modo normal: PPWz=[2, 4, 6, 8, 12, 16, 24, 32], 50 periodos, 200 passos/periodo.
+Pacote: PPWz=[2.5, 3, 4, 8], 10 periodos, dominio vertical periodico de 80 km.
+Pacote centrado em z0=0.50*Lz, com sigma_m=m0/20 e suporte truncado em |m-m0|<=4*sigma_m.
+
+O modo normal usa um autovetor puro de cada operador, com o mesmo k, m e amplitude inicial de psi.
+As linhas finas nas figuras sao as previsoes espectrais; as grossas sao os resultados prognosticos RK4.
+O pacote usa dominio periodico para isolar dispersao de reflexao em contornos e da camada esponja.
+
+MODO NORMAL - RESULTADOS FINAIS
+- Nao-alternada, 2a ordem, PPWz=4: erro fase=6.062616e+01 rad; L2 final=1.784988e+00; deriva energia max=3.848e-07.
+- Nao-alternada, 2a ordem, PPWz=8: erro fase=1.602568e+01 rad; L2 final=1.974817e+00; deriva energia max=1.800e-07.
+- Nao-alternada, 2a ordem, PPWz=16: erro fase=4.031462e+00 rad; L2 final=1.805277e+00; deriva energia max=1.441e-07.
+- Nao-alternada, 2a ordem, PPWz=32: erro fase=1.008982e+00 rad; L2 final=9.667241e-01; deriva energia max=1.361e-07.
+- Nao-alternada, 4a ordem, PPWz=4: erro fase=2.455754e+01 rad; L2 final=5.673038e-01; deriva energia max=2.097e-07.
+- Nao-alternada, 4a ordem, PPWz=8: erro fase=1.856576e+00 rad; L2 final=1.601191e+00; deriva energia max=1.383e-07.
+- Nao-alternada, 4a ordem, PPWz=16: erro fase=1.222754e-01 rad; L2 final=1.221992e-01; deriva energia max=1.338e-07.
+- Nao-alternada, 4a ordem, PPWz=32: erro fase=7.744390e-03 rad; L2 final=7.744371e-03; deriva energia max=1.335e-07.
+- Compacto (Pade), 4a ordem, PPWz=4: erro fase=7.157467e+00 rad; L2 final=8.467017e-01; deriva energia max=1.528e-07.
+- Compacto (Pade), 4a ordem, PPWz=8: erro fase=3.575081e-01 rad; L2 final=3.556072e-01; deriva energia max=1.344e-07.
+- Compacto (Pade), 4a ordem, PPWz=16: erro fase=2.113587e-02 rad; L2 final=2.113548e-02; deriva energia max=1.336e-07.
+- Compacto (Pade), 4a ordem, PPWz=32: erro fase=1.300500e-03 rad; L2 final=1.300500e-03; deriva energia max=1.335e-07.
+- Alternada (Lorenz), 2a ordem, PPWz=4: erro fase=1.602568e+01 rad; L2 final=1.974817e+00; deriva energia max=1.800e-07.
+- Alternada (Lorenz), 2a ordem, PPWz=8: erro fase=4.031462e+00 rad; L2 final=1.805277e+00; deriva energia max=1.441e-07.
+- Alternada (Lorenz), 2a ordem, PPWz=16: erro fase=1.008982e+00 rad; L2 final=9.667241e-01; deriva energia max=1.361e-07.
+- Alternada (Lorenz), 2a ordem, PPWz=32: erro fase=2.523067e-01 rad; L2 final=2.516380e-01; deriva energia max=1.342e-07.
+
+PACOTE DE ONDAS - RESULTADOS FINAIS
+- Nao-alternada, 2a ordem, PPWz=2.5: cgz medida=1.306305 m/s; erro posicao=28806.083 m; Delta sigma_z=57.613 m; delta sigma_z=-1292.371 m; deriva energia max=1.819e-07.
+- Nao-alternada, 4a ordem, PPWz=2.5: cgz medida=2.563740 m/s; erro posicao=37671.188 m; Delta sigma_z=2572.818 m; delta sigma_z=1222.833 m; deriva energia max=1.442e-07.
+- Compacto (Pade), 4a ordem, PPWz=2.5: cgz medida=2.582393 m/s; erro posicao=35312.860 m; Delta sigma_z=13312.798 m; delta sigma_z=11962.814 m; deriva energia max=8.874e-08.
+- Alternada (Lorenz), 2a ordem, PPWz=2.5: cgz medida=-0.902572 m/s; erro posicao=12459.719 m; Delta sigma_z=50.919 m; delta sigma_z=-1299.065 m; deriva energia max=5.503e-08.
+- Nao-alternada, 2a ordem, PPWz=3: cgz medida=1.229938 m/s; erro posicao=28208.163 m; Delta sigma_z=82.687 m; delta sigma_z=-1330.245 m; deriva energia max=1.333e-07.
+- Nao-alternada, 4a ordem, PPWz=3: cgz medida=1.433987 m/s; erro posicao=29703.571 m; Delta sigma_z=479.758 m; delta sigma_z=-933.174 m; deriva energia max=8.095e-08.
+- Compacto (Pade), 4a ordem, PPWz=3: cgz medida=0.031577 m/s; erro posicao=19341.082 m; Delta sigma_z=724.848 m; delta sigma_z=-688.084 m; deriva energia max=4.514e-08.
+- Alternada (Lorenz), 2a ordem, PPWz=3: cgz medida=-1.438784 m/s; erro posicao=8460.933 m; Delta sigma_z=62.163 m; delta sigma_z=-1350.770 m; deriva energia max=4.483e-08.
+- Nao-alternada, 2a ordem, PPWz=4: cgz medida=-0.000011 m/s; erro posicao=19061.877 m; Delta sigma_z=79.468 m; delta sigma_z=-1414.141 m; deriva energia max=7.717e-08.
+- Nao-alternada, 4a ordem, PPWz=4: cgz medida=-0.948724 m/s; erro posicao=12038.475 m; Delta sigma_z=147.222 m; delta sigma_z=-1346.387 m; deriva energia max=4.211e-08.
+- Compacto (Pade), 4a ordem, PPWz=4: cgz medida=-2.037240 m/s; erro posicao=4039.218 m; Delta sigma_z=347.764 m; delta sigma_z=-1145.845 m; deriva energia max=3.066e-08.
+- Alternada (Lorenz), 2a ordem, PPWz=4: cgz medida=-1.976029 m/s; erro posicao=4477.867 m; Delta sigma_z=238.431 m; delta sigma_z=-1255.179 m; deriva energia max=3.606e-08.
+- Nao-alternada, 2a ordem, PPWz=8: cgz medida=-1.974360 m/s; erro posicao=4423.857 m; Delta sigma_z=263.796 m; delta sigma_z=-1354.859 m; deriva energia max=3.606e-08.
+- Nao-alternada, 4a ordem, PPWz=8: cgz medida=-2.489569 m/s; erro posicao=785.470 m; Delta sigma_z=1173.199 m; delta sigma_z=-445.457 m; deriva energia max=2.772e-08.
+- Compacto (Pade), 4a ordem, PPWz=8: cgz medida=-2.583621 m/s; erro posicao=155.868 m; Delta sigma_z=1517.660 m; delta sigma_z=-100.996 m; deriva energia max=2.694e-08.
+- Alternada (Lorenz), 2a ordem, PPWz=8: cgz medida=-2.460643 m/s; erro posicao=980.964 m; Delta sigma_z=1073.393 m; delta sigma_z=-545.263 m; deriva energia max=2.888e-08.
+
+Interpretacao: a defasagem nao limitada cresce aproximadamente como (omega_num-omega_ana)t.
+O erro L2 instantaneo e limitado e oscilatorio por causa do enrolamento da fase.
+O erro do centro de energia cresce aproximadamente como (cgz_num-cgz_ana)t enquanto o pacote permanece longe do contorno periodico.
+Deriva de energia e reportada separadamente: crescimento exponencial indicaria instabilidade, nao dispersao.

@@ -1,0 +1,13 @@
+contrast,PPWz,baseline_scheme,improved_scheme,baseline_error_pct,improved_error_pct,error_reduction_factor
+Formal-order effect,4.0,"Non-staggered, second order","Non-staggered, fourth order",36.33802276324186,15.117363684322493,2.4037274965426887
+Staggering effect,4.0,"Non-staggered, second order","Staggered Lorenz, second order",36.33802276324186,9.968368384289384,3.64533305375354
+Compactness effect,4.0,"Non-staggered, fourth order","Compact Pade, fourth order",15.117363684322493,4.507034144862798,3.3541711019770166
+Formal-order effect,6.0,"Non-staggered, second order","Non-staggered, fourth order",17.300665686731186,3.5174433011863737,4.918534345925623
+Staggering effect,6.0,"Non-staggered, second order","Staggered Lorenz, second order",17.300665686731186,4.507034144862798,3.8385921052874226
+Compactness effect,6.0,"Non-staggered, fourth order","Compact Pade, fourth order",3.5174433011863737,0.7607988240774133,4.623355333720212
+Formal-order effect,8.0,"Non-staggered, second order","Non-staggered, fourth order",9.968368384289384,1.1784835913052238,8.458639948689456
+Staggering effect,8.0,"Non-staggered, second order","Staggered Lorenz, second order",9.968368384289384,2.5504641595567312,3.9084526426052104
+Compactness effect,8.0,"Non-staggered, fourth order","Compact Pade, fourth order",1.1784835913052238,0.22746914743162483,5.180850258646463
+Formal-order effect,12.0,"Non-staggered, second order","Non-staggered, fourth order",4.507034144862798,0.24249029757335006,18.5864514579165
+Staggering effect,12.0,"Non-staggered, second order","Staggered Lorenz, second order",4.507034144862798,1.1384070534630752,3.959070818431982
+Compactness effect,12.0,"Non-staggered, fourth order","Compact Pade, fourth order",0.24249029757335006,0.04314086430253772,5.6208956749873416
